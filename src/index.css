@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-item{
+    @apply underline text-primaryColor font-bold
+}
+.page-title{
+    @apply text-ashColor text-4xl lg:text-7xl font-bold text-center
+}
