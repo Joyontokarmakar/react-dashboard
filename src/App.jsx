@@ -11,16 +11,18 @@ function App() {
     return (
         <>
             <BrowserRouter>
-                <div className={'flex justify-start'}>
+                <div className={'flex justify-start font-inter'}>
                     <div className={'w-[308px]'}>
                         <Sidebar/>
                     </div>
-                    <div className={'w-full'}>
+                    <div className={'min-w-[calc(100vw-308px)]'}>
                         <Navbar/>
-                        <Routes>
-                            <Route path={route.ROOT_PATH} element={<Home/>} />
-                            <Route path={route.PROFILE_PATH} element={<Profile/>} />
-                        </Routes>
+                        <div className={'h-[calc(100vh-98px)] px-[33px] py-[28px] bg-lightSecondaryColor dark:bg-darkSecondaryColor'}>
+                            <Routes>
+                                <Route path={route.ROOT_PATH} element={<Home/>} />
+                                <Route path={route.PROFILE_PATH} element={<Profile/>} />
+                            </Routes>
+                        </div>
                     </div>
                 </div>
             </BrowserRouter>

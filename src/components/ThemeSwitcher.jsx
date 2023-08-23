@@ -15,7 +15,7 @@ const ThemeSwitcher = () => {
     return (
         <>
             <DarkModeSwitch
-                style={{ marginBottom: "2rem" }}
+                // style={{ marginBottom: "2rem" }}
                 checked={darkSide}
                 onChange={toggleDarkMode}
                 size={30}
