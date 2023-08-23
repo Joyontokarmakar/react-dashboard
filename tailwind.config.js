@@ -8,10 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryColor: '#08d8f1',
-        secondaryColor: '#0f172a',
-        ashColor: '#e7e7e7',
-        deepAshColor: '#263046',
+        lightPrimaryColor: '#FFFFFF',
+        darkPrimaryColor: '#1C1C25',
+        lightSecondaryColor: '#F0F8FF',
+        darkSecondaryColor: '#12131A',
       },
       boxShadow: {
         header: '0px -9px 43px 0px #1c1c1c',
