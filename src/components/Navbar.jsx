@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className={'flex justify-center items-center gap-x-[28px]'}>
                 <ThemeSwitcher/>
                 <img src={bell} alt=""/>
-                <div className={'bg-lightBlue3 dark:bg-darkBlue3 rounded-xl px-4 py-[6px] flex justify-between items-center gap-x-[9px]'}>
+                <div className={'bg-lightBlue3 dark:bg-darkBlue3 rounded-xl px-4 py-[6px] flex justify-between items-center gap-x-[9px] cursor-pointer'}>
                     <img src={avatar} alt=""/>
                     <div>
                         <p className={'text-blackColor dark:text-grayColor text-[13px] font-semibold leading-7'}>Andy Warhol</p>
