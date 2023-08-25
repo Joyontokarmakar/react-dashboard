@@ -1,8 +1,8 @@
 import ThemeSwitcher from "./ThemeSwitcher.jsx";
 import search from "../assets/svgIcon/search.svg";
-import bell from "../assets/svgIcon/bell.svg";
 import avatar from "../assets/images/avatar.png";
 import menu from "../assets/images/menu.png";
+import NotificationIcon from "./svg/NotificationIcon.jsx";
 
 const Navbar = () => {
 
@@ -15,7 +15,7 @@ const Navbar = () => {
             </div>
             <div className={'flex justify-center items-center gap-x-[28px]'}>
                 <ThemeSwitcher/>
-                <img src={bell} alt=""/>
+                <NotificationIcon fill={"fill-lightBlue2 dark:fill-white"}/>
                 <div className={'bg-lightBlue3 dark:bg-darkBlue3 rounded-xl px-4 py-[6px] flex justify-between items-center gap-x-[9px] cursor-pointer'}>
                     <img src={avatar} alt=""/>
                     <div>
