@@ -1,13 +1,13 @@
 import {Link, useLocation} from "react-router-dom";
-import * as route from "../routes/Slugs"
-import logo from "../assets/images/logo.svg";
-import DashboardIcon from "./svg/DashboardIcon.jsx";
-import MarketsIcon from "./svg/MarketsIcon.jsx";
-import TransactionIcon from "./svg/TransactionIcon.jsx";
-import ProfileIcon from "./svg/ProfileIcon.jsx";
-import SettingsIcon from "./svg/SettingsIcon.jsx";
-import HelpIcon from "./svg/helpIcon.jsx";
-import LogoutIcon from "./svg/LogoutIcon.jsx";
+import * as route from "../../routes/Slugs.jsx"
+import logo from "../../assets/images/logo.svg";
+import DashboardIcon from "../svg/DashboardIcon.jsx";
+import MarketsIcon from "../svg/MarketsIcon.jsx";
+import TransactionIcon from "../svg/TransactionIcon.jsx";
+import ProfileIcon from "../svg/ProfileIcon.jsx";
+import SettingsIcon from "../svg/SettingsIcon.jsx";
+import HelpIcon from "../svg/helpIcon.jsx";
+import LogoutIcon from "../svg/LogoutIcon.jsx";
 const Sidebar = () => {
     let location = useLocation();
     return (

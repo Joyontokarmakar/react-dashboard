@@ -2,13 +2,14 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import * as route from './routes/Slugs'
 import Home from "./pages/home.jsx";
 import Profile from "./pages/profile.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Sidebar from "./components/Sidebar.jsx";
+import Navbar from "./components/common/Navbar.jsx";
+import Sidebar from "./components/common/Sidebar.jsx";
 import Markets from "./pages/markets.jsx";
 import Transaction from "./pages/transaction.jsx";
 import Settings from "./pages/settings.jsx";
 import Help from "./pages/help.jsx";
 import Auth from "./pages/auth.jsx";
+import NotFound from "./pages/not-found.jsx";
 function App() {
 
 
@@ -31,6 +32,7 @@ function App() {
                                 <Route path={route.SETTINGS_PATH} element={<Settings/>} />
                                 <Route path={route.HELP_PATH} element={<Help/>} />
                                 <Route path={route.AUTH_PATH} element={<Auth/>} />
+                                <Route path={'*'} element={<NotFound/>} />
                             </Routes>
                         </div>
                     </div>

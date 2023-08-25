@@ -1,8 +1,11 @@
+import UnderConstruction from "../components/common/UnderConstruction.jsx";
 
 const Markets = () => {
     return (
         <div>
-            <h1 className={'page-title'}>Markets</h1>
+            <UnderConstruction
+                pageName={'Market'}
+            />
         </div>
     )
 }

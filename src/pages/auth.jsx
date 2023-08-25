@@ -1,8 +1,11 @@
+import UnderConstruction from "../components/common/UnderConstruction.jsx";
 
 const Auth = () => {
     return (
         <div>
-            <h1 className={'page-title'}>Auth</h1>
+            <UnderConstruction
+                pageName={'Auth'}
+            />
         </div>
     )
 }

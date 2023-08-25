@@ -1,8 +1,8 @@
-import ThemeSwitcher from "./ThemeSwitcher.jsx";
-import search from "../assets/svgIcon/search.svg";
-import avatar from "../assets/images/avatar.png";
-import menu from "../assets/images/menu.png";
-import NotificationIcon from "./svg/NotificationIcon.jsx";
+import ThemeSwitcher from "../ThemeSwitcher.jsx";
+import search from "../../assets/svgIcon/search.svg";
+import avatar from "../../assets/images/avatar.png";
+import menu from "../../assets/images/menu.png";
+import NotificationIcon from "../svg/NotificationIcon.jsx";
 
 const Navbar = () => {
 

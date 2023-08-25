@@ -1,8 +1,11 @@
+import UnderConstruction from "../components/common/UnderConstruction.jsx";
 
 const Profile = () => {
     return (
         <div>
-            <h1 className={'page-title'}>Profile</h1>
+            <UnderConstruction
+                pageName={'Profile'}
+            />
         </div>
     )
 }
