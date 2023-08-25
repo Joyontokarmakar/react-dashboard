@@ -9,3 +9,7 @@
 .page-title{
     @apply text-4xl lg:text-7xl font-bold text-center text-blue-500 dark:text-green-500
 }
+
+.sideBarNavItem{
+    @apply rounded-lg flex justify-start gap-x-[7px] items-center px-7 py-[11px]
+}
