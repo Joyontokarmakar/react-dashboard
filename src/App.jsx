@@ -18,12 +18,12 @@ function App() {
         <>
             <BrowserRouter>
                 <div className={'flex justify-start font-inter'}>
-                    <div className={'w-[308px]'}>
+                    <div className={'max-w-[308px]'}>
                         <Sidebar/>
                     </div>
-                    <div className={'min-w-[calc(100vw-308px)]'}>
+                    <div className={'w-full'}>
                         <Navbar/>
-                        <div className={'h-[calc(100vh-98px)] px-[33px] py-[28px] bg-lightSecondaryColor dark:bg-darkSecondaryColor'}>
+                        <div className={'h-[calc(100vh-98px)] px-[33px] py-[28px] bg-lightSecondaryColor dark:bg-darkSecondaryColor overflow-y-auto'}>
                             <Routes>
                                 <Route path={route.ROOT_PATH} element={<Home/>} />
                                 <Route path={route.MARKET_PATH} element={<Markets/>} />

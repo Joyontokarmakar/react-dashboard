@@ -1,7 +1,7 @@
 
 const BalanceIcon = (prop) => {
     return (
-        <div className={'h-[44px] w-[44px] rounded-md p-[9px] flex justify-center items-center '+(prop.bg)}>
+        <div className={'wallet-icon '+(prop.bg)}>
             <svg
                 width="20"
                 height="18"

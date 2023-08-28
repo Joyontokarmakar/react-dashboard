@@ -1,8 +1,9 @@
 import Wallet from "../components/dashboard/Wallet.jsx";
+import MarketTable from "../components/dashboard/MarketTable.jsx";
 
 const Home = () => {
     return (
-        <div>
+        <div className={'w-full'}>
             {/*wallet Section*/}
             <div className={'flex justify-between gap-x-[25px]'}>
                 <Wallet
@@ -48,6 +49,27 @@ const Home = () => {
                     profit={'556.14'}
                     impression={'+64.11%'}
                 />
+            </div>
+
+            {/*Market section*/}
+            <div className={'flex justify-between gap-x-[25px] mt-[25px]'}>
+                <div className={'flex-none dashboardCard w-[230px] 2xl:w-[851px] h-[150px] 2xl:h-[428px]'}>
+
+                </div>
+                <div className={'grow dashboardCard w-[230px] 2xl:w-[478px] h-[150px] 2xl:h-[428px]'}>
+                    <MarketTable/>
+                </div>
+            </div>
+            <div className={'flex justify-between gap-x-[25px] mt-[25px]'}>
+                <div className={'flex-none dashboardCard w-[230px] 2xl:w-[315px] h-[150px] 2xl:h-[301px]'}>
+
+                </div>
+                <div className={'grow dashboardCard w-[230px] 2xl:w-[366px] h-[150px] 2xl:h-[301px]'}>
+
+                </div>
+                <div className={'grow dashboardCard w-[230px] 2xl:w-[622px] h-[150px] 2xl:h-[301px]'}>
+
+                </div>
             </div>
         </div>
     )

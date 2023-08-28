@@ -9,8 +9,8 @@ import SOLIcon from "../svg/SOLIcon.jsx";
 const Wallet = (prop) => {
     return (
         <fragment>
-            <div className={'bg-lightPrimaryColor dark:bg-darkPrimaryColor w-[325px] h-[174px] rounded-xl px-5 pt-[22px] pb-[18px]'}>
-                <div className={'flex justify-start items-center gap-x-[25px]'}>
+            <div className={'dashboardCard wallet'}>
+                <div className={'flex justify-start items-center gap-x-3 2xl:gap-x-[25px]'}>
                     {
                         prop.icon === 'balance' ?
                             <BalanceIcon fill={'fill-lightBlue2 dark:fill-darkBlue2'} bg={'bg-lightBlue5 dark:bg-darkBlue5'}/> :
@@ -23,35 +23,34 @@ const Wallet = (prop) => {
                     {
                         prop.balance ?
                             <div className={'flex justify-between items-center gap-x-3 w-full'}>
-                                <h3 className={'dark:text-white text-base font-semibold'}>{prop.name}</h3>
-                                <img src={eye} alt=""/>
+                                <h3 className={'dark:text-white text-sm 2xl:text-base font-semibold'}>{prop.name}</h3>
+                                <img src={eye} alt="" className={'w-4 2xl:w-6'}/>
                             </div>
                             :
                             <div>
-                                <h3 className={'dark:text-white text-base font-semibold'}>{prop.name}</h3>
-                                <p className={'text-ashColor1 text-[13px]'}>{prop.source}</p>
+                                <h3 className={'dark:text-white text-sm 2xl:text-base font-semibold'}>{prop.name}</h3>
+                                <p className={'text-ashColor1 text-[9px] 2xl:text-[13px]'}>{prop.source}</p>
                             </div>
                     }
                 </div>
 
                 {
                     prop.balance ?
-                    <p className={'dark:text-white text-3xl pt-[22px] font-semibold'}>$<span>{prop.amount}</span></p>
-                    :
-                    <div className={'flex justify-between items-baseline'}>
-                        <p className={'dark:text-white text-xl font-semibold'}>$<span>{prop.amount}</span></p>
-                        {
-                            prop.icon === "btc" ? <img src={btcGraph} alt=""/> :
-                            prop.icon === "eth" ? <img src={ethGraph} alt=""/> :
-                            <img src={solGraph} alt=""/>
-                        }
-                    </div>
+                        <p className={'dark:text-white text-xl 2xl:text-3xl pt-4 2xl:pt-[22px] font-semibold'}>$<span>{prop.amount}</span></p>
+                        :
+                        <div className={'flex justify-between items-baseline'}>
+                            <p className={'dark:text-white text-base 2xl:text-xl font-semibold'}>$<span>{prop.amount}</span></p>
+                            {
+                                prop.icon === "btc" ? <img src={btcGraph} alt="" className={'w-[100px] 2xl:w-[137px]'}/> :
+                                prop.icon === "eth" ? <img src={ethGraph} alt="" className={'w-[100px] 2xl:w-[137px]'}/> :
+                                <img src={solGraph} alt="" className={'w-[100px] 2xl:w-[137px]'}/>
+                            }
+                        </div>
                 }
-
-                <div className={'flex justify-between items-center gap-x-[18px] pt-2'}>
-                    <p className={'text-ashColor1 text-[13px]'}>{prop.balance ? 'Monthly Profit' : 'PNL Daily'}</p>
-                    <p className={'text-[13px] ' + (prop.status ? 'text-lightGreen dark:text-darkGreen' : 'text-lightRed dark:text-darkRed')}><span>+</span>$<span>{prop.profit}</span></p>
-                    <span className={'text-[11px] text-lightGreen dark:text-darkGreen bg-lightGreen1 dark:darkGreen1 rounded-full px-2 py-1 text-center'}>{prop.impression}</span>
+                <div className={'flex justify-between items-center gap-x-3 2xl:gap-x-[18px] pt-2'}>
+                    <p className={'text-[10px] 2xl:text-[13px] text-ashColor1'}>{prop.balance ? 'Monthly Profit' : 'PNL Daily'}</p>
+                    <p className={'text-[10px] 2xl:text-[13px]' + (prop.status ? 'text-lightGreen dark:text-darkGreen' : 'text-lightRed dark:text-darkRed')}><span>+</span>$<span>{prop.profit}</span></p>
+                    <span className={'badge'}>{prop.impression}</span>
                 </div>
             </div>
         </fragment>

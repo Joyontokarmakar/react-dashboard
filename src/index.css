@@ -13,3 +13,19 @@
 .sideBarNavItem{
     @apply rounded-lg flex justify-start gap-x-[7px] items-center px-7 py-[11px]
 }
+
+.dashboardCard{
+    @apply bg-lightPrimaryColor dark:bg-darkPrimaryColor rounded-xl
+}
+
+.wallet{
+    @apply w-[230px] 2xl:min-w-[325px] h-[150px] 2xl:h-[174px] px-4 2xl:px-5 pt-[18px] 2xl:pt-[22px] pb-4 2xl:pb-[18px]
+}
+
+.wallet-icon{
+    @apply h-[35px] 2xl:h-[44px] w-[35px] 2xl:w-[44px] rounded-md p-[6px] 2xl:p-[9px] flex justify-center items-center
+}
+
+.badge{
+    @apply text-[9px] 2xl:text-[11px] text-lightGreen dark:text-darkGreen bg-lightGreen1 dark:bg-darkGreen1 rounded-full px-2 py-1 text-center
+}
