@@ -43,7 +43,7 @@
 }
 
 .viewAllBtn{
-    @apply px-[10px] py-[2px] text-[10px] leading-[22px] font-semibold rounded-[7px] text-lightAsh3 dark:text-darkAsh3 border-[0.4px] border-lightAsh4 dark:border-darkAsh4
+    @apply text-[10px] leading-[22px] font-semibold rounded-[7px] text-lightAsh3 dark:text-darkAsh3 border-[0.4px] border-lightAsh4 dark:border-darkAsh4
 }
 
 .tableRow{
@@ -53,3 +53,6 @@
     @apply align-middle whitespace-nowrap py-4 text-[10px] 2xl:text-xs
 }
 
+.converterBody{
+    @apply bg-lightAsh6 dark:bg-darkAsh6 pl-[17px] pr-2 py-[9px] rounded-[7px] flex justify-between items-center
+}

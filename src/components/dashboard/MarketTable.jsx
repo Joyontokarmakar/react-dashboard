@@ -41,7 +41,7 @@ const MarketTable = () => {
                     }
                 </tbody>
             </table>
-            <button className={'viewAllBtn block ml-auto mt-[15px]'}>View All</button>
+            <button className={'viewAllBtn block ml-auto mt-[15px] px-[10px] py-[2px]'}>View All</button>
         </div>
     )
 }

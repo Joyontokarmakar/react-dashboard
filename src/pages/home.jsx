@@ -3,6 +3,7 @@ import walletData from "../jsonData/wallet-data.js";
 import MarketTable from "../components/dashboard/MarketTable.jsx";
 import {useEffect, useState} from "react";
 import HistoryTable from "../components/dashboard/HistoryTable.jsx";
+import CurrencyConvert from "../components/dashboard/currencyConvert.jsx";
 
 const Home = () => {
     const [wallet, setWallet] = useState(walletData);
@@ -43,7 +44,7 @@ const Home = () => {
 
                 </div>
                 <div className={'grow dashboardCard w-[230px] 2xl:w-[366px] h-[150px] 2xl:h-[301px] px-[28px] pt-5 pb-[26px]'}>
-
+                    <CurrencyConvert/>
                 </div>
                 <div className={'grow dashboardCard w-[230px] 2xl:w-[622px] h-[150px] 2xl:h-[301px] px-8 py-5'}>
                     <HistoryTable/>

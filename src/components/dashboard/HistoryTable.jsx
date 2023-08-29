@@ -13,7 +13,7 @@ const HistoryTable = () => {
         <div>
             <div className={'mb-[18px] flex justify-between items-center'}>
                 <h2 className={'cardTitle'}>History</h2>
-                <button className={'viewAllBtn'}>View All</button>
+                <button className={'viewAllBtn px-[10px] py-[2px]'}>View All</button>
             </div>
             <table className={'w-full'}>
                 <tbody>
