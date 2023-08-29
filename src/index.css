@@ -29,3 +29,27 @@
 .badge{
     @apply text-[9px] 2xl:text-[11px] rounded-full px-2 py-1 text-center
 }
+
+.badge2{
+    @apply text-[9px] 2xl:text-[10px] leading-[22px] font-semibold rounded-[6px] px-2 py-[6px] text-center
+}
+
+.cardTitle{
+    @apply dark:text-white text-xl font-semibold
+}
+
+.filterBtn{
+    @apply px-3 py-[2px] text-[10px] leading-[23px] font-semibold rounded-[7px] dark:text-white bg-lightAsh2 dark:bg-darkBlue3 focus:bg-lightBlue3 dark:focus:bg-darkBlue3 focus:text-lightBlue2 dark:focus:text-darkBlue2
+}
+
+.viewAllBtn{
+    @apply px-[10px] py-[2px] text-[10px] leading-[22px] font-semibold rounded-[7px] text-lightAsh3 dark:text-darkAsh3 border-[0.4px] border-lightAsh4 dark:border-darkAsh4
+}
+
+.tableRow{
+    @apply border-0 border-b-[0.4px] last:border-b-0 border-lightAsh5 dark:border-darkAsh5
+}
+.tableData{
+    @apply align-middle whitespace-nowrap py-4 text-[10px] 2xl:text-xs
+}
+

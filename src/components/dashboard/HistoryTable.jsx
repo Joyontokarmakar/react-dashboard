@@ -1,37 +1,43 @@
-import historyTable from "../../jsonData/history-table.js";
 import {useEffect, useState} from "react";
+import historyTableData from "../../jsonData/history-table-data.js";
+import upArrow from "../../assets/svgIcon/arrowUp.svg"
+import downArrow from "../../assets/svgIcon/arrowDown.svg"
 const HistoryTable = () => {
-    const [tableData, setTableData] = useState(historyTable);
+    const [tableData, setTableData] = useState(historyTableData);
 
     useEffect(()=>{
-        setTableData(historyTable)
+        setTableData(historyTableData)
     },[])
 
     return (
         <div>
+            <div className={'mb-[18px] flex justify-between items-center'}>
+                <h2 className={'cardTitle'}>History</h2>
+                <button className={'viewAllBtn'}>View All</button>
+            </div>
             <table className={'w-full'}>
                 <tbody>
-                {
-                    tableData.map((data,index)=>
-                        <tr key={index}>
-                            <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 ">
-                                <img src="" alt=""/>
-                            </th>
-                            <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 ">
-                                {data.historyType}
-                            </th>
-                            <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 ">
-                                {data.amount}
-                            </td>
-                            <td className="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                {data.time}
-                            </td>
-                            <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <span>{data.status}</span>
-                            </td>
-                        </tr>
-                    )
-                }
+                    {
+                        tableData.map((data,index)=>
+                            <tr key={index} className={'tableRow'}>
+                                <th className={'tableData'}>
+                                    <img src={data.direction === "up" ? upArrow: downArrow} alt=""/>
+                                </th>
+                                <th className={'tableData dark:text-white'}>
+                                    {data.historyType}
+                                </th>
+                                <td className={'tableData ' + (data.direction === 'down' ? 'text-lightGreen dark:text-darkGreen' : 'text-lightRed dark:text-darkRed')}>
+                                    {data.amount}
+                                </td>
+                                <td className={'tableData dark:text-white'}>
+                                    {data.time}
+                                </td>
+                                <td className={'tableData'}>
+                                    <span className={'badge2 ' + (data.status==='done'? 'text-lightGreen dark:text-darkGreen bg-lightGreen1 dark:bg-darkGreen1' : 'text-lightOrange1 dark:text-darkOrange1 bg-lightOrange2 dark:bg-darkOrange2')}>{data.status}</span>
+                                </td>
+                            </tr>
+                        )
+                    }
                 </tbody>
             </table>
         </div>

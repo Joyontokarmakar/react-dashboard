@@ -1,4 +1,4 @@
-const historyTable = [
+const historyTableData = [
     {
         "direction":"down",
         "historyType":"BTCUSDT",
@@ -32,4 +32,4 @@ const historyTable = [
         "status":"done",
     },
 ]
-export default historyTable;
+export default historyTableData;

@@ -6,9 +6,10 @@ import BalanceIcon from "../svg/BalanceIcon.jsx";
 import BTCIcon from "../svg/BTCIcon.jsx";
 import ETHIcon from "../svg/ETHIcon.jsx";
 import SOLIcon from "../svg/SOLIcon.jsx";
+import {Fragment} from "react";
 const Wallet = (prop) => {
     return (
-        <fragment>
+        <Fragment>
             <div className={'dashboardCard wallet'}>
                 <div className={'flex justify-start items-center gap-x-3 2xl:gap-x-[25px]'}>
                     {
@@ -40,11 +41,15 @@ const Wallet = (prop) => {
                         :
                         <div className={'flex justify-between items-baseline'}>
                             <p className={'dark:text-white text-base 2xl:text-xl font-semibold'}>$<span>{prop.amount}</span></p>
-                            {
-                                prop.icon === "btc" ? <img src={btcGraph} alt="" className={'w-[100px] 2xl:w-[137px]'}/> :
-                                prop.icon === "eth" ? <img src={ethGraph} alt="" className={'w-[100px] 2xl:w-[137px]'}/> :
-                                <img src={solGraph} alt="" className={'w-[100px] 2xl:w-[137px]'}/>
-                            }
+                            <img
+                                src={
+                                    prop.icon === "btc" ? btcGraph :
+                                    prop.icon === "eth" ? ethGraph :
+                                    solGraph
+                                }
+                                alt="short graph"
+                                className={'w-[100px] 2xl:w-[137px]'}
+                            />
                         </div>
                 }
                 <div className={'flex justify-between items-center gap-x-3 2xl:gap-x-[18px] pt-2'}>
@@ -53,7 +58,7 @@ const Wallet = (prop) => {
                     <span className={'badge '+(prop.status? 'text-lightGreen dark:text-darkGreen bg-lightGreen1 dark:bg-darkGreen1': 'text-lightRed dark:text-darkRed bg-lightRed1 dark:bg-darkRed1')}>{prop.impression}</span>
                 </div>
             </div>
-        </fragment>
+        </Fragment>
     )
 }
 export default Wallet

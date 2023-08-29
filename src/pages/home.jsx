@@ -31,21 +31,21 @@ const Home = () => {
 
             {/*Market section*/}
             <div className={'flex justify-between gap-x-[25px] mt-[25px]'}>
-                <div className={'flex-none dashboardCard w-[230px] 2xl:w-[851px] h-[150px] 2xl:h-[428px]'}>
+                <div className={'flex-none dashboardCard w-[230px] 2xl:w-[851px] h-[150px] 2xl:h-[428px] px-[43px] py-[35px]'}>
 
                 </div>
-                <div className={'grow dashboardCard w-[230px] 2xl:w-[478px] h-[150px] 2xl:h-[428px]'}>
+                <div className={'grow dashboardCard w-[230px] 2xl:w-[478px] h-[150px] 2xl:h-[428px] px-[38px] pt-[38px] pb-[14px]'}>
                     <MarketTable/>
                 </div>
             </div>
             <div className={'flex justify-between gap-x-[25px] mt-[25px]'}>
-                <div className={'flex-none dashboardCard w-[230px] 2xl:w-[315px] h-[150px] 2xl:h-[301px]'}>
+                <div className={'flex-none dashboardCard w-[230px] 2xl:w-[315px] h-[150px] 2xl:h-[301px] px-[28px] py-5'}>
 
                 </div>
-                <div className={'grow dashboardCard w-[230px] 2xl:w-[366px] h-[150px] 2xl:h-[301px]'}>
+                <div className={'grow dashboardCard w-[230px] 2xl:w-[366px] h-[150px] 2xl:h-[301px] px-[28px] pt-5 pb-[26px]'}>
 
                 </div>
-                <div className={'grow dashboardCard w-[230px] 2xl:w-[622px] h-[150px] 2xl:h-[301px]'}>
+                <div className={'grow dashboardCard w-[230px] 2xl:w-[622px] h-[150px] 2xl:h-[301px] px-8 py-5'}>
                     <HistoryTable/>
                 </div>
             </div>
