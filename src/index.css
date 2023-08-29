@@ -27,5 +27,5 @@
 }
 
 .badge{
-    @apply text-[9px] 2xl:text-[11px] text-lightGreen dark:text-darkGreen bg-lightGreen1 dark:bg-darkGreen1 rounded-full px-2 py-1 text-center
+    @apply text-[9px] 2xl:text-[11px] rounded-full px-2 py-1 text-center
 }

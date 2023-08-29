@@ -49,6 +49,8 @@ export default {
         darkGreen1: "#26AB5F33",
         lightRed: "#EB5757",
         darkRed: "#EE6E6E",
+        lightRed1: "#EB575733",
+        darkRed2: "#EE6E6E33",
         lightAsh1: "#DDE1E438",
         darkAsh1: "#262C3038",
         lightAsh2: "#F8F8F9",

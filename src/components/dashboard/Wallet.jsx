@@ -50,7 +50,7 @@ const Wallet = (prop) => {
                 <div className={'flex justify-between items-center gap-x-3 2xl:gap-x-[18px] pt-2'}>
                     <p className={'text-[10px] 2xl:text-[13px] text-ashColor1'}>{prop.balance ? 'Monthly Profit' : 'PNL Daily'}</p>
                     <p className={'text-[10px] 2xl:text-[13px]' + (prop.status ? 'text-lightGreen dark:text-darkGreen' : 'text-lightRed dark:text-darkRed')}><span>+</span>$<span>{prop.profit}</span></p>
-                    <span className={'badge'}>{prop.impression}</span>
+                    <span className={'badge '+(prop.status? 'text-lightGreen dark:text-darkGreen bg-lightGreen1 dark:bg-darkGreen1': 'text-lightRed dark:text-darkRed bg-lightRed1 dark:bg-darkRed1')}>{prop.impression}</span>
                 </div>
             </div>
         </fragment>
