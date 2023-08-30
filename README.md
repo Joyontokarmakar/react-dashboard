@@ -1,4 +1,4 @@
-# Modern Dashboar / Admin Panel
+# Modern Dashboard / Admin Panel
 #### I have developed a dynamic React.js dashboard that offers users the flexibility to switch between two distinct themes: a light theme and a dark theme. This feature allows users to personalize their dashboard experience based on their preferences and environmental conditions. In the light theme, the dashboard likely features a bright and clean design with light-colored backgrounds and text. This theme may be preferred for well-lit environments or users who prefer a classic look. In contrast, the dark theme is designed for users who prefer a more visually comfortable experience in low-light conditions or simply prefer a modern and sleek appearance. This theme typically incorporates dark backgrounds and light-colored text, reducing eye strain and providing a contemporary aesthetic.
 
 ## Packages
