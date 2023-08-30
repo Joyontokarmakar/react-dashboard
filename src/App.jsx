@@ -18,7 +18,7 @@ function App() {
         <>
             <BrowserRouter>
                 <div className={'flex justify-start font-inter'}>
-                    <div className={'max-w-[308px]'}>
+                    <div className={' max-w-[231px] 2xl:max-w-[308px]'}>
                         <Sidebar/>
                     </div>
                     <div className={'w-full'}>

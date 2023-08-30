@@ -31,22 +31,22 @@ const Home = () => {
             </div>
 
             {/*Market section*/}
-            <div className={'flex justify-between gap-x-[25px] mt-[25px]'}>
-                <div className={'flex-none dashboardCard w-[730px] 2xl:w-[851px] h-[370px] 2xl:h-[428px] px-[43px] py-[35px]'}>
+            <div className={'flex justify-between gap-x-[18px] 2xl:gap-x-[25px] mt-[18px] 2xl:mt-[25px]'}>
+                <div className={'dashboardCard w-full 2xl:min-w-[851px] h-[322px] 2xl:h-[428px] px-8 2xl:px-[43px] py-[26px] 2xl:py-[35px]'}>
                     <CandleStickChart/>
                 </div>
-                <div className={'grow dashboardCard w-[414px] 2xl:w-[478px] h-[370px] 2xl:h-[428px] px-[38px] pt-[38px] pb-[14px]'}>
+                <div className={'dashboardCard w-full 2xl:min-w-[478px] h-[322px] 2xl:h-[428px] px-7 2xl:px-[38px] pt-7 2xl:pt-[38px] pb-2.5 2xl:pb-[14px]'}>
                     <MarketTable/>
                 </div>
             </div>
-            <div className={'flex justify-between gap-x-[25px] mt-[25px]'}>
-                <div className={'flex-none dashboardCard w-[273px] 2xl:w-[315px] h-[260px] 2xl:h-[301px] px-[28px] py-5'}>
+            <div className={'flex justify-between gap-x-[18px] 2xl:gap-x-[25px] mt-[18px] 2xl:mt-[25px]'}>
+                <div className={'dashboardCard w-full 2xl:min-w-[315px] h-[226px] 2xl:h-[301px] px-[21px] 2xl:px-7 py-[15px] 2xl:py-5'}>
                     <PieDonutChart/>
                 </div>
-                <div className={'grow dashboardCard w-[317px] 2xl:w-[366px] h-[260px] 2xl:h-[301px] px-[28px] pt-5 pb-[26px]'}>
+                <div className={'dashboardCard w-full 2xl:min-w-[366px] h-[226px] 2xl:h-[301px] px-[21px] 2xl:px-7 pt-[15px] 2xk:pt-5 pb-[19px] 2xl:pb-[26px]'}>
                     <CurrencyConvert/>
                 </div>
-                <div className={'grow dashboardCard w-[539px] 2xl:w-[622px] h-[260px] 2xl:h-[301px] px-8 py-5'}>
+                <div className={'dashboardCard w-full 2xl:min-w-[622px] h-[226px] 2xl:h-[301px] px-6 2xl:px-8 py-[15px] 2xl:py-5'}>
                     <HistoryTable/>
                 </div>
             </div>

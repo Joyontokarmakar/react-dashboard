@@ -10,13 +10,14 @@ const HistoryTable = () => {
     },[])
 
     return (
-        <div>
+        <div className={'flex flex-col h-full'}>
             <div className={'mb-[18px] flex justify-between items-center'}>
                 <h2 className={'cardTitle'}>History</h2>
                 <button className={'viewAllBtn px-[10px] py-[2px]'}>View All</button>
             </div>
-            <table className={'w-full'}>
-                <tbody>
+            <div className={'h-full overflow-y-scroll'}>
+                <table className={'w-full'}>
+                    <tbody>
                     {
                         tableData.map((data,index)=>
                             <tr key={index} className={'tableRow'}>
@@ -38,8 +39,9 @@ const HistoryTable = () => {
                             </tr>
                         )
                     }
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

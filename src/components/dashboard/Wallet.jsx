@@ -24,12 +24,12 @@ const Wallet = (prop) => {
                     {
                         prop.balance ?
                             <div className={'flex justify-between items-center gap-x-3 w-full'}>
-                                <h3 className={'dark:text-white text-sm 2xl:text-base font-semibold'}>{prop.name}</h3>
+                                <h3 className={'dark:text-white text-xs 2xl:text-base font-semibold'}>{prop.name}</h3>
                                 <img src={eye} alt="" className={'w-4 2xl:w-6'}/>
                             </div>
                             :
                             <div>
-                                <h3 className={'dark:text-white text-sm 2xl:text-base font-semibold'}>{prop.name}</h3>
+                                <h3 className={'dark:text-white text-xs 2xl:text-base font-semibold'}>{prop.name}</h3>
                                 <p className={'text-ashColor1 text-[9px] 2xl:text-[13px]'}>{prop.source}</p>
                             </div>
                     }
@@ -37,7 +37,7 @@ const Wallet = (prop) => {
 
                 {
                     prop.balance ?
-                        <p className={'dark:text-white text-xl 2xl:text-3xl pt-4 2xl:pt-[22px] font-semibold'}>$<span>{prop.amount}</span></p>
+                        <p className={'dark:text-white text-[22px] 2xl:text-3xl pt-4 2xl:pt-[22px] font-semibold'}>$<span>{prop.amount}</span></p>
                         :
                         <div className={'flex justify-between items-baseline'}>
                             <p className={'dark:text-white text-base 2xl:text-xl font-semibold'}>$<span>{prop.amount}</span></p>
@@ -52,9 +52,9 @@ const Wallet = (prop) => {
                             />
                         </div>
                 }
-                <div className={'flex justify-between items-center gap-x-3 2xl:gap-x-[18px] pt-2'}>
-                    <p className={'text-[10px] 2xl:text-[13px] text-ashColor1'}>{prop.balance ? 'Monthly Profit' : 'PNL Daily'}</p>
-                    <p className={'text-[10px] 2xl:text-[13px]' + (prop.status ? 'text-lightGreen dark:text-darkGreen' : 'text-lightRed dark:text-darkRed')}><span>+</span>$<span>{prop.profit}</span></p>
+                <div className={'flex justify-between items-center gap-x-3 2xl:gap-x-[18px] pt-[5px] 2xl:pt-2'}>
+                    <p className={'text-[9px] 2xl:text-[13px] text-ashColor1'}>{prop.balance ? 'Monthly Profit' : 'PNL Daily'}</p>
+                    <p className={'text-[9px] 2xl:text-[13px]' + (prop.status ? 'text-lightGreen dark:text-darkGreen' : 'text-lightRed dark:text-darkRed')}><span>+</span>$<span>{prop.profit}</span></p>
                     <span className={'badge '+(prop.status? 'text-lightGreen dark:text-darkGreen bg-lightGreen1 dark:bg-darkGreen1': 'text-lightRed dark:text-darkRed bg-lightRed1 dark:bg-darkRed1')}>{prop.impression}</span>
                 </div>
             </div>

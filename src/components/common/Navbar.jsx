@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className={"w-full h-[98px] px-[37px] py-[21px] flex items-center justify-between bg-lightPrimaryColor dark:bg-darkPrimaryColor"}>
             <div className={'w-2/5 flex justify-between items-center px-[26px] py-4 rounded-full border-[1.3px] border-lightGrayColor2 dark:darkGrayColor2'}>
-                <input type="text" placeholder="Search..." className={'focus:outline-none bg-transparent'}/>
+                <input type="text" placeholder="Search..." className={'cursor-text focus:outline-none bg-transparent dark:text-white'}/>
                 <img src={search} alt=""/>
             </div>
             <div className={'flex justify-center items-center gap-x-[28px]'}>

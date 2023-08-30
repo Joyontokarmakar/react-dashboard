@@ -19,15 +19,15 @@
 }
 
 .wallet{
-    @apply w-[230px] 2xl:min-w-[325px] h-[150px] 2xl:h-[174px] px-4 2xl:px-5 pt-[18px] 2xl:pt-[22px] pb-4 2xl:pb-[18px]
+    @apply w-full 2xl:min-w-[325px] h-[130px] 2xl:h-[174px] px-4 2xl:px-5 pt-[18px] 2xl:pt-[22px] pb-4 2xl:pb-[18px]
 }
 
 .wallet-icon{
-    @apply h-[35px] 2xl:h-[44px] w-[35px] 2xl:w-[44px] rounded-md p-[6px] 2xl:p-[9px] flex justify-center items-center
+    @apply h-[33px] 2xl:h-[44px] w-[33px] 2xl:w-[44px] rounded-md p-[6px] 2xl:p-[9px] flex justify-center items-center
 }
 
 .badge{
-    @apply text-[9px] 2xl:text-[11px] rounded-full px-2 py-1 text-center
+    @apply text-[8px] 2xl:text-[11px] rounded-full px-2 py-1 text-center
 }
 
 .badge2{
@@ -35,7 +35,7 @@
 }
 
 .cardTitle{
-    @apply dark:text-white text-xl font-semibold
+    @apply dark:text-white text-base 2xl:text-xl font-semibold
 }
 
 .filterBtn{
@@ -54,5 +54,23 @@
 }
 
 .converterBody{
-    @apply bg-lightAsh6 dark:bg-darkAsh6 pl-[17px] pr-2 py-[9px] rounded-[7px] flex justify-between items-center
+    @apply bg-lightAsh6 dark:bg-darkAsh6 pl-3 2xl:pl-[17px] pr-1.5 2xl:pr-2 py-1.5 2xl:py-[9px] rounded-[5px] 2xl:rounded-[7px] w-full flex justify-between items-center
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2F80ED33;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0060FF;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #062141;
 }
